@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CHAT_APP_DBC83 }}'
           projectId: chat-app-dbc83
+          entryPoint: "./emulators"

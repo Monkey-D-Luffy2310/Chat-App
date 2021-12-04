@@ -18,3 +18,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CHAT_APP_DBC83 }}'
           channelId: live
           projectId: chat-app-dbc83
+          entryPoint: "./emulators"
