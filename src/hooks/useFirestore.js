@@ -16,6 +16,7 @@ const useFirestore = (collection, condition) => {
     const unsubscribe = collectionRef.onSnapshot((snapshot) => {
       let result = [];
       snapshot.forEach((value) => {
+        // eslint-disable-next-line
         result.push({ ...value.data(), ["id"]: value.id })
       });
       setDocument([...result]);

@@ -51,7 +51,7 @@ const ChatHeader = () => {
         </Button>
         <Avatar.Group maxCount={3}>
           {users.map((user) => (
-            <Tooltip key={user.uid} title={user.displayName} placement="bottom">
+            <Tooltip key={user.uid} title={user.displayName} placement="bottom" color="rgb(63,14,64)">
               <Avatar
                 src={user.photoURL}
                 style={{ backgroundColor: "#87d068" }}
