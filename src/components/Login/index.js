@@ -30,11 +30,9 @@ function Login() {
       });
   }
   async function handleGoogleLogin() {
-    console.log(1);
     await auth
       .signInWithPopup(googleProvider)
       .then(function (result) {
-        console.log(result);
         const { additionalUserInfo, user } = result;
         if (additionalUserInfo?.isNewUser) {
           addDocs("users", {
